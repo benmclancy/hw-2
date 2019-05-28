@@ -17,11 +17,38 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab2',
+        path: 'explore',
         children: [
           {
             path: '',
-            loadChildren: '../tab2/tab2.module#Tab2PageModule'
+            loadChildren: '../explore/explore.module#ExplorePageModule'
+          }
+        ]
+      },
+      {
+        path: 'saved',
+        children: [
+          {
+            path: '',
+            loadChildren: '../saved/saved.module#SavedPageModule'
+          }
+        ]
+      },
+      {
+        path: 'trips',
+        children: [
+          {
+            path: '',
+            loadChildren: '../trips/trips.module#TripsPageModule'
+          }
+        ]
+      },
+      {
+        path: 'inbox',
+        children: [
+          {
+            path: '',
+            loadChildren: '../inbox/inbox.module#InboxPageModule'
           }
         ]
       },
