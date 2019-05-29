@@ -13,7 +13,7 @@ export class LoginPage implements OnInit {
   ) {}
 
   navToExplore() {
-    this.navCtrl.navigateForward("");
+    this.navCtrl.navigateForward("main/tabs/explore");
   }
 
   ngOnInit() {
